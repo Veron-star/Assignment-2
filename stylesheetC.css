@@ -1,92 +1,17 @@
-*{
-   box-sizing: border-box;}
-
 body{
     background-image: url(Portfolio/IMG_3854.jpg);
-    -webkit-background-composite: cover;
     background-size: cover;
     background-position: center center;
 }
 
-.wrapper{
-    width: 800px;
-    margin: 5% auto;
+hr{
+    background: ivory;
 }
 
-.form-area{
-    display: flex;
-    background: rgba(131, 176, 226, 0.8);
-    border-radius: 25px;
-    padding: 1.9em;
-}
-
-.msg-area{
-    display: flex;
-    flex-direction: column;
-    order: 2;
-}
-
-.msg-area > textarea{
-    flex: 1;
-    min-width: 18em;
-    background: transparent;
-    color: darkblue;
-    padding: 15px;
-    border: solid;
-}
-
-.details-area{  
-    flex: 1;
-    order: 1;
-    margin-right: 2em;
-}
-
-.details-area input{
-    width: 100%;
-    background: transparent;
-    color: darkblue;
-    border-radius: 40px;
-    border-style: solid;
-}
-
-.details-area input, .details-area button{
-    padding: 1em;
-    margin-bottom: 1em;
-}
-
-.details-area button{
-    background: rgb(10, 61, 170);
-    color: whitesmoke;
-    border: 0;
-    padding: 15px 50px;
-    border-radius: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-label{
-    color: black;
-    text-transform: uppercase;
-    line-height: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-@media all and (min-width: 768px){
-    .form-area{
-        flex-direction: row;
-    }
-    .msg-area,
-    .details-area input{
-        flex-basis: 0;
-        flex-grow: 1;
-        flex-shrink: 1;
-    }
-    .wrapper{
-        width: 600px;
-        margin: auto;
-    }
-    .details-area button{
-        margin-left: 9em;
-    }
+.contact-form{
+    background: rgba(0,0,0,.6);
+    color: ivory;
+    margin-top: 100px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px;
 }

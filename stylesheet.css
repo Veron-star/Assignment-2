@@ -1,72 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap');
 
-body {
-    overflow-x: hidden;
-    font-family: 'Rubik', sans-serif;
-    color: blue;
+html{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/*---Navigation--*/
-.navbar {
+body{
+    background-image: url(Portfolio/IMG_2112.jpg);
+    background-size: cover;
+    background-position: center;}
+
+/*header*/
+header{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    background-color: black;
+}
+
+.navbar-toggler{
+    color: ivory;
+    font-size: 25px;
+}
+
+.navbar-nav{
+    padding: 20px
+}
+
+.navbar-link{
+    color: ivory;
     text-transform: uppercase;
-    font-size: .9rem;
-    letter-spacing: .1rem;
-    background: rgba(0,0,0,0.6)!important;
+    font-size: 12px;
+    transition: opacity .5s;
 }
 
-.navbar-brand {
-    font-size: small;
-    color: blueviolet;
+.nav-link.hover{
+    color: ivory;
 }
-
-.navbar-nav li {
-    padding-right: .7rem;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: whitesmoke;
-    padding-top: .8rem;
-}
-
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: powderblue;
-}
-
-/*---Page Section--*/
 
 .home-inner {
-    background-image: url(img/IMG_2112.jpg);
+    background-image: url(portfolio/IMG_2112.JPG);
 }
 
 .caption {
     width: 100%;
     max-width: 100%;
     position: absolute;
-    top: 40%;
+    top: 38%;
     z-index: 1;
-    color: aquamarine;
+    color: black;
     text-transform: uppercase;
 }
+
 .caption h1 {
-    font-size: 3.8rem;
+    font-size: 50px;
     font-weight: 700;
-    letter-spacing: .3rem;
-    text-shadow: 0.1rem .1rem .5rem black;
-    padding-bottom: 1rem;
+    letter-spacing: 10px;
+    text-shadow: 10px 10px 20px ivory;
+    padding-bottom: 20px;
 }
 
 .caption h3 {
-    font-size: 2rem;
-    text-shadow: 0.1rem .1rem .5rem black;
-    padding-bottom: 1.6rem;
+    font-size: 25px;
+    text-shadow: 0.1px .1px 0.8px ivory;
+    padding-bottom: 20px;
 }
 
-.btn-lg {
-    border-width: medium;
-    border-radius: 0;
-    padding: .6rem 1.3rem;
-    font-size: 1.1rem;
-    background-color: aquamarine;
-    border-style: solid;
+@media screen and (min-width: 768px) {
+    .navbar {
+        background-color: transparent;
+    }
+    .navbar-nav{
+        padding: 0;
+    }
+
+    .nav-link{
+        color: white;
+    }
+
+    .nav-link:hover{
+        color: inherit;
+    }
+
+    nav:hover .nav-link:not(:hover){
+        opacity: 0.5;
+    }
+
+    .about-content{
+        position: relative;
+        display: block;
+    }
+
+    .about-description{
+        position: absolute;
+        top: 80%;
+        transform: translateY(-50%);
+        width: 60%;
+        outline-offset: -10px;
+    }
+
+    .about-image img{
+        width: 70%;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-description{
+        top: 50%;
+        width: 40%;
+        outline: 10px solid rgba(56,65,71,0.5);
+        outline-offset: -20px;
+    }
+
+    .about-image img{
+        width: 80%;
+    }
 }
