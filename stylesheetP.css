@@ -37,7 +37,10 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
     color: rebeccapurple;
-    font-size: 50px;
+    font-size: 100px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    text-decoration: underline;
 }
 
 .lightbox-content{

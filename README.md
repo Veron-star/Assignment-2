@@ -12,6 +12,7 @@ The features include the following:
 - Footer
 
 The URL to the responsive design:
+https://veron-star.github.io/Assignment-2/
 
 
-GitHub URL:
+GitHub URL:https://github.com/Veron-star/Assignment-2
