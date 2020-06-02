@@ -15,4 +15,4 @@ The URL to the responsive design:
 https://veron-star.github.io/veronicaresponsivedesign/
 
 
-GitHub URL:https://github.com/Veron-star/Assignment-2
+GitHub URL:https://github.com/Veron-star/veronicaresponsivedesign
